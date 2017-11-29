@@ -21,6 +21,7 @@ git add filnamn : lägger till filuppdateringar du vill spara
 git add * : addar alla filer du ändrat i
 git commit -m "kommentar" : commitar adden
 git push : laddar upp till servern
+git status: visar lista på vilka filer du ändrat i och inte har pushat
 
 WORKFLOW:
 -börja alltid med git pull

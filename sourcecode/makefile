@@ -1,3 +1,0 @@
-target:
-	g++-4.8 -c World.cpp Bullet.cpp Player.cpp Enemy.cpp -Ikarka011/include
-	g++-4.8 World.o Bullet.o Player.o Enemy.o -o run -lsfml-graphics -lsfml-window -lsfml-system

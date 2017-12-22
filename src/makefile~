@@ -1,0 +1,3 @@
+target:
+		g++-4.8 -std=c++11 -c -g Frame.cpp collision.cpp World.cpp Pause.cpp scoreboard.cpp game_over.cpp start_menu.cpp simpletest.cpp -Ivicro741/include
+		g++-4.8 Frame.o collision.o World.o Pause.o scoreboard.o game_over.o start_menu.o simpletest.o -o run -lsfml-graphics -lsfml-window -lsfml-system

@@ -14,7 +14,7 @@
  * BESKRIVNING
  *
  * Denna modul skapar deklarationer för att köra skärmarna samt skriva ut dessa och
- * byta mellan dessa skrämar i spelet SpaceJam. 
+ * byta mellan dessa skrämar i spelet SpaceJam.
  */
 
 #ifndef FRAME_H
@@ -33,21 +33,8 @@ class Frame
 {
     public:
         virtual int Run(sf::RenderWindow& window)=0;
-    protected:
 };
 
-
-
-class The_Window
-{
-    public:
-        void change_current_frame(Frame* new_frame);
-        void print_current_frame(sf::RenderWindow& window);
-        void set_current_frame(Frame* new_frame);
-
-    private:
-        Frame* current_frame;
-};
 
 
 /*

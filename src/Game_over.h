@@ -15,7 +15,7 @@
  *
  * Denna modul deklarerar funktionerna som behövs för Game Over-skärmen. Dessa är
  * poäng som tagits underspelets gång ska visas. De 5 högsta poängen ska visas.
- * Man ska kuna returnera till spelets Start meny. 
+ * Man ska kuna returnera till spelets Start meny.
  *
  */
 
@@ -42,8 +42,6 @@ public:
   game_over(sf::Font& font);
   ~game_over() {}
   int Run(sf::RenderWindow& window);
-
-  Frame* start_menu_frame;
 
   void save(int score);
   void readFile();

@@ -16,7 +16,7 @@
  * Denna modul skapar alla spelares, fiendeskepp och asteroiders storlek,
  * rörelsehastighet och deras rörelsegränser (utanför skärm), var det ska skapas,
  * deras liv tills det dör.
- * 
+ *
  */
 
 #ifndef OBJECT_H
@@ -31,8 +31,6 @@
 #include<sstream>
 #include<vector>
 #include <memory>
-#include "Frame.h"
-#include "Pause.h"
 
 
 
@@ -178,59 +176,6 @@ class Enemy_Bullet : public Obstacle
           void move() override;
 };
 
-
-
-/* ---------World------------- */
-
-class World : public Frame
-{
-public:
-
-  World(sf::Font& font);
-  ~World() {};
-
-  void remove_from_list(long unsigned& m);
-  void collision_check();
-  void move_sprites();
-  void update_score(int const i);
-  void spawn_objects();
-  void draw(sf::RenderWindow& window);
-  void pause_check();
-  void update_sprite_vector();
-  void Game();
-  int Run(sf::RenderWindow& window);
-  void set_pause_frame(Frame* new_pause_frame);
-  void set_game_over_frame(Frame* new_frame);
-  void unpause();
-  void reset();
-  bool game_paused;
-  bool game_over;
-  Frame* pause_frame;
-  Frame* game_over_frame;
-
-private:
-  sf::Texture playerTex;;
-  sf::Texture enemyTex;
-  sf::Texture asteroidTex;
-  sf::Texture bulletTex;
-  sf::Texture backgroundTex;
-  sf::Sprite background;
-
-  int score;
-  int enemySpawnTimer;
-  int asteroidSpawnTimer;
-
-  std::vector<std::unique_ptr<Object>> sprites;
-  std::ostringstream ssScore;
-  sf::Text scoreText;
-
-  void save();
-  int highscore0;
-  int highscore1;
-  int highscore2;
-  int highscore3;
-  int highscore4;
-};
 
 
 /*

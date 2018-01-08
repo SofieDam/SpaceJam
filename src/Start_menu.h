@@ -38,8 +38,6 @@ using namespace sf;
 class start_menu : public Frame
 {
   public:
-    Sprite SelectButton;
-
     start_menu(RenderWindow* window);
     ~start_menu() {}
 
@@ -51,6 +49,7 @@ class start_menu : public Frame
     int Run(sf::RenderWindow& window) override;
 
   private:
+    Sprite SelectButton;
     int buttonCounter;
     int MAX_NUMBER_OF_BUTTON;
     sf::Sprite bgStartMenu;
@@ -64,6 +63,6 @@ class start_menu : public Frame
 
 
 /*
- * SLUT PÅ FILEN Frame.h
+ * SLUT PÅ FILEN Start_menu.h
  */
 #endif

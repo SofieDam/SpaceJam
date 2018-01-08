@@ -12,7 +12,7 @@
  *
  * BESKRIVNING
  *
- * Denna implementeringsfil är vår main fil som initierar allt i spelet SpaceJam.  
+ * Denna implementeringsfil är vår main fil som initierar allt i spelet SpaceJam.
  *
  */
 
@@ -28,6 +28,8 @@
 #include "Object.h"
 #include "Pause.h"
 #include "Game_over.h"
+#include"World.h"
+
 
 
 

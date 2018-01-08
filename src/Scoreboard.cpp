@@ -15,7 +15,7 @@
  *
  * Denna implementeringsfil hanterar det 5 högsta poängen samt är ett av alternativen
  * när man kommer till startmenyn for att se Scoreboard. Läser av text-filen
- * som lagrar det fem högsta poängen. 
+ * som lagrar det fem högsta poängen.
  */
 
 
@@ -59,12 +59,6 @@ scoreboard::scoreboard(RenderWindow* window, Font& font)
 
 
 
-void scoreboard::set_start_menu_frame(Frame* new_start_menu_frame)
-{
-  start_menu_frame = new_start_menu_frame;
-}
-
-
 
 int scoreboard::Run(RenderWindow& window)
 {
@@ -103,14 +97,11 @@ void scoreboard::readFile()
   readFile.open("gamedata/scores.txt");
   if (readFile.is_open())
   {
-      while (!readFile.eof())
-      {
         readFile >> highscore0
                  >> highscore1
                  >> highscore2
                  >> highscore3
                  >> highscore4;
-      }
   }
   readFile.close();
 }

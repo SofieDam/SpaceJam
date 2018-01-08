@@ -14,7 +14,7 @@
  * BESKRIVNING
  *
  * Denna modul deklarerar Scoreboard menyn, de fem högsta poängen och skriver ut
- * dessa. 
+ * dessa.
  */
 
 #ifndef SCOREBOARD_H
@@ -38,8 +38,6 @@ class scoreboard : public Frame
 {
   public:
     scoreboard(RenderWindow* Window, sf::Font& font);
-    void set_start_menu_frame(Frame* new_start_menu_frame);
-    Frame* start_menu_frame;
     int Run(RenderWindow& window);
     void readFile();
     void printFile();
